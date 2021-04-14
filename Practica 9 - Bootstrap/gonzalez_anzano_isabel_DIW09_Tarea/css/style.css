@@ -1,0 +1,40 @@
+
+* {
+    padding:0px;
+    margin:0px;
+}
+
+.fondo_blanco{
+    background-color: white;
+}
+.bordeado{
+    border: 1px solid black;
+}
+.borde_blanco {
+    border: 1px solid #FFF;
+    background-color: white;
+}
+
+/*Colores*/
+.verde{
+    background-color: lawngreen;
+    height: 80px;
+}
+.rojo {
+    background-color: red;
+}
+.rosa{
+    background-color: hotpink;
+    height: 60px;
+}
+.naranja{
+    background-color: #FFB34B;
+    height: 140px;
+}
+.azul{
+    background-color: blue;
+    height: 100px;
+    color: white;
+}
+
+

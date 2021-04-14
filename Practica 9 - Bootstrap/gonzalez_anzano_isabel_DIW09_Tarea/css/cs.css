@@ -1,0 +1,132 @@
+
+#contenedor {
+    padding: 0px;
+    margin:0px;
+}
+.bordeado{
+    border: 1px solid black;
+    /*margin: 5px;*/
+}
+
+
+
+/*MEDIAS*/
+/*md y lg  min-width: 768px  */
+@media (min-width: 768px){
+    div {
+        border: 1px solid #FFF;
+    }
+    .rojo {
+        background-color: red;
+        /*height: 360px;*/
+        /* width: 50px;*/
+        text-align: left;
+    }
+    .verde{
+        background-color:lawngreen;
+        text-align: center;
+        height: 70px;
+    }
+    .rosa{
+        background-color: hotpink;
+        text-align: center;
+        height: 50px;
+    }
+    .naranja{
+        background-color: #FFB34B;
+        height: 100px;
+        text-align: center;
+    }
+    .azul{
+        background-color: darkblue;
+        color: white;
+        height: 100px;
+        text-align: center;
+    }
+    #bloques{
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        /*  margin: 0.1px;*/
+    }
+
+}
+/*sm  max-width: 767.90px*/
+@media  (max-width: 767.90px){
+    div {
+        border: 1px solid #FFF;
+        /*padding: 0px;
+        margin: 0px;*/
+    }
+    .rojo {
+        background-color: indianred;
+        text-align: left;
+        /* height: 659px;*/
+        /* height: 100px;*/
+    }
+    .verde{
+        background-color:lawngreen;
+        text-align: center;
+
+    }
+    .rosa{
+        background-color: hotpink;
+        text-align: center;
+
+    }
+    .naranja{
+        background-color: #FFB34B;
+        text-align: center;
+        height: 100px;
+    }
+    .azul{
+        background-color: darkblue;
+        color: white;
+        text-align: center;
+        height: 100px;
+
+    }
+    #bloques{
+        border-right-width: 0px;
+        padding-right: 0px;
+        border-bottom-width: 0px;
+        padding-left: 0px;
+        border-left-width: 1px;
+        margin-left: 1px;
+    }
+}
+/*xs  max-width: 540px*/
+@media (max-width: 540px) {
+    div {
+        border: 1px solid #FFF;
+        /*padding: 0px;
+        margin: 0px;*/
+    }
+    .rojo {
+        background-color: red;
+        height: 370px;
+        width: 50px;
+        text-align: left;
+    }
+    .verde{
+        background-color:lawngreen;
+        text-align: center;
+        height: 70px;
+    }
+    .rosa{
+        background-color: hotpink;
+        text-align: center;
+        height: 50px;
+    }
+    .naranja{
+        background-color: #FFB34B;
+        height: 100px;
+        text-align: center;
+    }
+    .azul{
+        background-color: darkblue;
+        color: white;
+        height: 100px;
+        text-align: center;
+    }
+}
