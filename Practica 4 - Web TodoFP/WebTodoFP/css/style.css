@@ -1,0 +1,396 @@
+#bodCompleted{
+  margin: 0.1px auto;
+  float: center;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor para el logo y el menú */
+#header{text-align: center;}
+/* Header verde con gradiente*/
+.roundBackground{
+  float:left;
+  position: relative;
+  left: 0px;
+  margin-left: 5px;
+  height: 100px;
+  width: 920px;
+  padding: 20px 20px 0px 20px;
+  /* Fondo con gradiente para varios navegadores o  color liso sino se visualiza */
+  background: -webkit-linear-gradient(#3E9722 15%, #CAE646);
+  background: -moz-linear-gradient(#3E9722 15%, #CAE646);
+  background: -o-linear-gradient(#3E9722 15%, #CAE646);
+  background: linear-gradient(#3E9722 15%, #CAE646);
+  background-color: #3E9722;
+  /* Esquinas redondeadas para varios navegadores */
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.logo{left:0px; margin-bottom: 0px; width: 200px; float:left; margin-top: 15px;}
+
+/* modificamos los enlaces puestos en el logotipo */
+.logo * a{
+  text-decoration: none;
+  color: #333;
+}
+
+/* Texto y márgenes para el subtítulo del logo */
+.subtitle{
+  color: #333;
+  left: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.navbar{
+  float: right;
+  position: absolute;
+  margin-right: 15px;
+  right: 0px;
+  bottom: -15px;
+  margin-bottom: 0px;
+}
+/* Esto afecta a la lista del navbar como conjunto (tipo de lista y ubicación) */
+.navbar ul{
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  float:right;
+}
+
+/* Esto afecta a cada elemento individual del la lista, se añade un degradado izq-dcha verde-blanco-verde
+  Añadido un color de fondo liso por si el navegador no admite
+  los degradados*/
+.navbar ul li {
+  float: left;
+  width: 125px;
+  height: 35px;
+  margin-left:2px;
+
+  background: -webkit-linear-gradient(left, #CAE646, #FFFFFF, #CAE646);
+  background: -moz-linear-gradient(left, #CAE646, #FFFFFF, #CAE646);
+  background: -o-linear-gradient(left, #CAE646, #FFFFFF, #CAE646);
+  background: linear-gradient(left, #CAE646, #FFFFFF, #CAE646);
+  background-color: #CAE646;
+  border-radius: 5px;
+}
+
+/* El estilo de los enlaces del menu */
+.navbar ul li a {
+  display: block;
+  line-height: 3em;
+  text-decoration: none;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  font-family: arial, sans-serif;
+  width: 125px;
+  height: 35px;
+  margin-right:2px;
+}
+
+/* Estilo del enlace del menu cuando se pasa el raton por encima*/
+.navbar ul li a:hover {
+  border-radius: 5px;
+  background-color: #e58c24;
+  float: left;
+  width: 125px;
+  height: 35px;
+}
+
+/* Enlace seleccionado por defecto del navbar.*/
+#default {
+  border-radius: 5px;
+  background-color: #e58c24;
+  color: black;
+}
+
+/* El contenido de la página que va entre la
+  cabecera y el pie*/
+#container{
+  float: left;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+/* Enlaces que aparecen en el cuerpo, en color verde y negrita*/
+#container * a{
+  color: green;
+  font-weight: bold;
+}
+
+/* Atributos de los párrafos dentro del contenedor'*/
+#container * p{
+  text-align: justify;
+  margin: 0px 20px;
+  padding: 10px;
+}
+
+/* Borde superior verde redondeado sin borde inferior*/
+.greenBorder{
+  float: left;
+  position: absolute ;
+  -moz-border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  border: #3E9722 3px solid;
+  border-bottom: none;
+  width: 920px;
+  height: 100px;
+  left: 0px;
+  margin-left: 5px;
+  padding: 20px 20px 0px 20px;
+}
+
+/* Las 3 columnas del cuerpo se centran aquí*/
+.containerCenter{
+  width: 920px;
+  float: left;
+  position: relative;
+  left: 0px;
+  margin-left: 5px;
+  padding: 20px 20px 0px 20px;
+}
+
+/* Los listados y los enlaces que contengan saldrán en verde y con letra pequeña */
+.containerCenter * li,
+.containerCenter * li a:visited{
+  color: #3E9722;
+  font-size: small;
+}
+
+/* Los enlaces de los listados saldrán en azul cuando nos posicionemos sobre ellos */
+.containerCenter * li a:hover{
+  color: #3C74E6;
+}
+
+/* Contenedor para la columna de la izquierda *****************************************************/
+#leftColumn{
+  /* ancho obligado por enunciado */
+  width: 220px;
+  height: 100%;
+  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+/* Títulos de las unidades de trabajo*/
+#leftColumn * dt{
+  margin-left: 20px;
+  font: 0.7em sans-serif, Arial, Helvetica;
+  font-weight: bold;
+}
+
+/* links de las unidades de trabajo */
+#leftColumn * dd{
+  margin-left: 20px;
+  padding-bottom: 15px;
+  font: 0.7em sans-serif, Arial, Helvetica;
+}
+
+/* Títulos de los temas, en cajas azules con letra blanca, se añade un borde inferior
+para separarlos del contenido siguiente.*/
+.themeTitle{
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #3c74e6;
+  color: white;
+  font: 0.9em/1.4 Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+/* Para las fechas qu acompañan a algunos títulos */
+.themeTitle span{
+  float: right;
+  font: Arial, Helvetica, sans-serif bold white;
+  font-size: 10px;
+  padding: 10px 5px;
+}
+
+/* Formulario de Acceso ****************************+*/
+/* Mueve el formulario de acceso a la izq*/
+.form{
+  padding-left: 20px;
+}
+/* Contenedor de los campos del formulario */
+.formFields{
+  padding: 5px;
+}
+/* Contenedor del boton del formulario */
+.buttonSubmit{
+  padding: 5px;
+}
+/* El propio boton de Acceder a la cuenta de usuario, se le ha añadido un gradiente
+en un gris claro, y se han redondeado las puntas */
+.buttonAccess{
+  height: 25px;
+  background: -webkit-linear-gradient(#eeeeee 50%, #666666);
+  background: -moz-linear-gradient(#eeeeee 50%, #666666);
+  background: -o-linear-gradient(#eeeeee 50%, #666666);
+  background: linear-gradient(#eeeeee 50%, #666666);
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+.buttonAccess:hover {
+  color: linear-gradient(#eeeeee 50%, #666666) !important;
+  box-shadow: 0 4px 4px #666666;
+  transition: all 0.2s ease;
+}
+
+/*Esta clase afecta a todos los enlaces que queremos que tengan un tamaño
+pequeño y un color verde*/
+.smallLink{
+  font-size: small;
+  padding: 5px;
+}
+
+
+/* Contenedor de la columna central *************************************************+*/
+#centerColumn{
+  /* width y padding vienen dados por el ejercicio */
+  width: 480px;
+  height: 100%;
+  padding-left: 20px;
+  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+/* Los listados tendrán un tipo de letra normal y de color negro con un margen para identarlos*/
+#centerColumn ol > li{
+  font: 1em Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+/* Contenedor de la columna de la derecha,******************************************+*/
+#rightColumn{
+  width: 180px;
+  height: 100%;
+  padding-left: 20px;
+  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+/* Contenedor de los links de encima de la imagen en la columna derecha */
+.linksGroupRight{
+  padding-bottom: 10px;
+}
+/* Definimos cómo queremos que aparezcan los enlaces en la columna de la izquierda */
+#rightColumn * a{
+  text-decoration: underline;
+  font: 0.8em sans-serif, Arial, Helvetica;
+  font-weight: bold;
+}
+
+/*Pie de página *************************************************************+*/
+#footer{
+  float: left;
+  position: relative;
+  left: 0px;
+  width: 960px;
+}
+
+/* Definimos los enlaces del pie de página de color verde, según la tarea*/
+#footer * a{
+  color: #3E9722;
+}
+.footerText{
+  text-align: center;
+  margin-left: 200px;
+
+}
+
+/* Imagenes *********************************************************+*/
+/* Contenedor de la imagen alargada que aparece en la columna de la derecha*/
+.imgRightColumn{
+  float:left;
+  width: 100%;
+
+
+  text-align: center;
+}
+/* Imagen */
+.longImage{
+  width: 95px;
+  height:600px;
+}
+/* contenedor de la Imagen FP */
+.logoFP{
+  float: left;
+  margin: 10px 10px 5px 20px;
+
+}
+/* Imagen */
+.logoImage{
+  width: 95px;
+  height:100px;
+}
+
+.backgroundTranspImage{
+  width: 920px;
+  float: right;
+    position: relative;
+    left: 0px;
+   margin-left: 900px;
+  padding-bottom: 0px;
+}
+
+/* Estilos varios *************************************************+*/
+h1{
+  color: #333;
+  text-shadow: 0px 1px 3px #FFFFFF;
+  font-family: sans-serif;
+  left: 0px;
+  bottom: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+/*líneas a puntos*/
+hr{
+  margin: 5px 20px;
+  border: 1px dashed #666;
+}
+
+.italic{
+  font: 0.9em sans-serif, Arial, Helvetica;
+  font-style: italic;
+}
+
+.italicWithMargin{
+  margin: 10px 20px 10px 20px;
+  padding: 25px;
+  font: 0.9em sans-serif, Arial, Helvetica;
+  font-style: italic;
+  text-align: justify;
+  line-height: 150%;
+}
+/* Texto en bloque */
+.text {
+  text-align: left;
+  font: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-indent:10px;
+  margin-top:-8px;
+  line-height: 120%;
+}
+
+.smallText{
+  font: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  font-size: 0.7em;
+  padding: 40px;
+}
